@@ -627,7 +627,7 @@ class Instrument(_BaseInstrument):
         data = self.read_raw()
 
         try:
-            if fmt & 0x03 == single:
+            if fmt & 0x01 == single:
                 is_single = True
             elif fmt & 0x03 == double:
                 is_single = False
